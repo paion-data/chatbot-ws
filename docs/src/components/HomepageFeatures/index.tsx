@@ -90,7 +90,7 @@ const FeatureList: FeatureItem[] = [
     id: 'not-used',
     description: (
       <>
-        FastWS is 100% open source and available on <a href="https://github.com/QubitPi/fast-ws">Github</a>. Released
+        FastWS is 100% open source and available on <a href="https://github.com/QubitPi/chatbot-ws">Github</a>. Released
         under the commercial-friendly
         <a href="http://www.apache.org/licenses/LICENSE-2.0.html"> Apache License, Version 2.0.</a>
       </>

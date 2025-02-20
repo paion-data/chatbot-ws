@@ -18,37 +18,6 @@ More info about difference between JAX-RS and Spring can be found in [this threa
 
 To use FastWS as the basis for a webservice, we start by creating a repository using the template on GitHub.
 
-Creating a Repository from GitHub Template
-------------------------------------------
-
-We can click on this link to generate a repository using the template: [Create a new repository](https://github.com/QubitPi/fast-ws/generate) from QubitPi/fast-ws. Alternatively, we can visit
-the [fast-ws repository on GitHub](https://github.com/QubitPi/fast-ws) and click
-on the "Use this template" button on the top-right.
-
-In both cases, the next steps are:
-
-1. Enter a name for the new repository.
-2. Uncheck "Include all branches".
-3. Click on "Create repository from template".
-
-For more details on how to create repositories using template, read the article on the GitHub website:
-[Creating a repository from a template](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
-
-:::caution
-
-If the repository is public, GitHub offers unlimited free build minutes. If it's a private repository, however,
-[billing policy](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions#included-storage-and-minutes)
-applies
-
-:::
-
-After Creating the Repository
------------------------------
-
-At this point, FastWS has generated a Java webservice project with just what we need to start quickly. Developer can now
-start adding business value and __get work done much faster in a standard way__. The following sections of this
-documentation contain further details on how to proceed next.
-
 - [Development](development)
 - [Configuration](configuration)
 

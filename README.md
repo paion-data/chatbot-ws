@@ -1,13 +1,12 @@
-FastWS
-======
+ChatbotWS
+=========
 
 ![Java Version Badge][Java Version Badge]
-[![GitHub Workflow Status][GitHub Workflow Status]](https://github.com/QubitPi/fast-ws/actions/workflows/ci-cd.yaml)
+[![GitHub Workflow Status][GitHub Workflow Status]](https://github.com/QubitPi/chatbot-ws/actions/workflows/ci-cd.yaml)
 [![Apache License Badge]][Apache License, Version 2.0]
 
-__FastWS__ is a [JSR 370] webservice template that lets us spin up Java webservice quickly through [GitHub templates].
-One can think of FastWS as the Jersey/Jetty version of [Spring Initializr]. At the end of the day, FastWS helps
-organization to improve the velocity and quality of their teams' work
+__FastWS__ is a [JSR 370] webservice that proxies LLM chatbot such as OpenAI. At the end of the day, ChatbotWS helps
+organization quickly deploy and manage AI webservices in a production quality
 
 ✨ Features
 -----------
@@ -26,7 +25,7 @@ Please make sure Docker is installed
 commands:
 
 ```console
-docker run --name=fast-ws -it -p 8080:8080 jack20191124/fast-ws
+docker run --name=chatbot-ws -it -p 8080:8080 jack20191124/chatbot-ws
 ```
 
 That's it. A healthcheck endpoint can be pinned with
@@ -61,18 +60,15 @@ for details.
 License
 -------
 
-The use and distribution terms for [fast-ws]() are covered by the [Apache License, Version 2.0].
+The use and distribution terms for [chatbot-ws]() are covered by the [Apache License, Version 2.0].
 
 [Apache License Badge]: https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white
 [Apache License, Version 2.0]: https://www.apache.org/licenses/LICENSE-2.0
 
 [Documentation]: https://fastws.qubitpi.org/
 
-[GitHub templates]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository#about-template-repositories
-[GitHub Workflow Status]: https://img.shields.io/github/actions/workflow/status/QubitPi/fast-ws/ci-cd.yaml?branch=master&logo=github&style=for-the-badge
+[GitHub Workflow Status]: https://img.shields.io/github/actions/workflow/status/QubitPi/chatbot-ws/ci-cd.yaml?branch=master&logo=github&style=for-the-badge
 
 [Java Version Badge]: https://img.shields.io/badge/Java-17-brightgreen?style=for-the-badge&logo=OpenJDK&logoColor=white
-[fast-ws]: https://fastws.qubitpi.org/
+[chatbot-ws]: https://fastws.qubitpi.org/
 [JSR 370]: https://jcp.org/en/jsr/detail?id=370
-
-[Spring Initializr]: https://start.spring.io/

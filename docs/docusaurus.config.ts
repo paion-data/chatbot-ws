@@ -26,7 +26,7 @@ const config: Config = {
   baseUrl: '/',
 
   organizationName: 'QubitPi',
-  projectName: 'fast-ws',
+  projectName: 'chatbot-ws',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -45,12 +45,12 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/QubitPi/fast-ws/tree/master/docs/',
+          editUrl: 'https://github.com/QubitPi/chatbot-ws/tree/master/docs/',
         },
         blog: {
           showReadingTime: true,
           blogSidebarCount: 'ALL',
-          editUrl: 'https://github.com/QubitPi/fast-ws/tree/master/docs/',
+          editUrl: 'https://github.com/QubitPi/chatbot-ws/tree/master/docs/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -82,7 +82,7 @@ const config: Config = {
           position: "left",
         },
         {
-          href: 'https://github.com/QubitPi/fast-ws',
+          href: 'https://github.com/QubitPi/chatbot-ws',
           label: 'GitHub',
           position: 'right',
         },
@@ -105,7 +105,7 @@ const config: Config = {
           items: [
             {
               label: 'Discussions',
-              href: 'https://github.com/QubitPi/fast-ws/discussions',
+              href: 'https://github.com/QubitPi/chatbot-ws/discussions',
             },
           ],
         },
@@ -118,7 +118,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/QubitPi/fast-ws',
+              href: 'https://github.com/QubitPi/chatbot-ws',
             },
           ],
         },

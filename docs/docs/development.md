@@ -62,15 +62,15 @@ OpenJDK 64-Bit Server VM (build 17.0.10+9, mixed mode)
 ### Installing Docker Engine
 
 FastWS has [Docker-based integration tests]; it also supports
-[running template webserivce in Docker][fast-ws Dockerfile]. Docker can be installed by following its
+[running template webserivce in Docker][chatbot-ws Dockerfile]. Docker can be installed by following its
 [official instructions](https://docs.docker.com/desktop/install/mac-install/)
 
 Getting Source Code
 -------------------
 
 ```bash
-git clone git@github.com:QubitPi/fast-ws.git
-cd fast-ws
+git clone git@github.com:QubitPi/chatbot-ws.git
+cd chatbot-ws
 ```
 
 ### Syncing up with FastWS's Code Styles with IntelliJ
@@ -78,7 +78,7 @@ cd fast-ws
 For the moment, we have distilled the most important code style conventions with respect to FastWS's code as IntelliJ
 settings. If IntelliJ is used for IDE, we may import these code style settings by importing the
 [FastWS-Project-intellij-code-style.xml][style config] file in the root of the repo. The setting for the project will
-appear as a new Scheme named "fast-ws-Project" under IDE's __Editor__ -> __Code Style__ section.
+appear as a new Scheme named "chatbot-ws-Project" under IDE's __Editor__ -> __Code Style__ section.
 
 Please also enable "remove unused imports" by __Editor__ -> __General__ -> __Auto Import__ -> __Optimize Imports on the
 Fly__, which will automatically remove unused imports.
@@ -105,7 +105,7 @@ For IT tests, we use [Testcontainers] instead of [jcabi-mysql] because the latte
 Packaging
 ---------
 
-A [WAR file](https://en.wikipedia.org/wiki/WAR_(file_format)) named __fast-ws-1.0-SNAPSHOT.war__ will
+A [WAR file](https://en.wikipedia.org/wiki/WAR_(file_format)) named __chatbot-ws-1.0-SNAPSHOT.war__ will
 be generated under _target_ directory for [running in Jetty](#running-webservice-in-standalone-jetty-production) with
 the command below:
 
@@ -126,10 +126,10 @@ We can obtain the image in one of the 2 approaches below:
 
 #### Docker Hub
 
-We can pull the image from [my docker hub](https://hub.docker.com/r/jack20191124/fast-ws/):
+We can pull the image from [my docker hub](https://hub.docker.com/r/jack20191124/chatbot-ws/):
 
 ```bash
-docker pull jack20191124/fast-ws
+docker pull jack20191124/chatbot-ws
 ```
 
 #### GitHub
@@ -137,12 +137,12 @@ docker pull jack20191124/fast-ws
 We could also build the image from [source][Docker]:
 
 ```bash
-git clone https://github.com/QubitPi/fast-ws.git
-cd fast-ws
-docker build -t jack20191124/fast-ws .
+git clone https://github.com/QubitPi/chatbot-ws.git
+cd chatbot-ws
+docker build -t jack20191124/chatbot-ws .
 ```
 
-Please note that the `jack20191124/fast-ws` in the last command is the image name; we could replace
+Please note that the `jack20191124/chatbot-ws` in the last command is the image name; we could replace
 that value with anything preferred
 
 ### Standing up a Container
@@ -150,10 +150,10 @@ that value with anything preferred
 When image is built, we can spin up an instance with
 
 ```bash
-docker run --name=fast-ws -it -p 8080:8080 jack20191124/fast-ws
+docker run --name=chatbot-ws -it -p 8080:8080 jack20191124/chatbot-ws
 ```
 
-- __name=fast-ws__: the container is named "fast-ws". We can change it
+- __name=chatbot-ws__: the container is named "chatbot-ws". We can change it
   accordingly.
 - __-p 8080:8080__: 8080 is the port where webservice will listen on. With this port forwarding, we will be able to
   access webservice from host machine web browser at `localhost:8080`
@@ -252,12 +252,12 @@ If tabs still come out at 2 spaces when hitting TAB or Enter, not 4 spaces, try:
 2. Do you have any .editorconfig files anywhere in the path of that file? Settings from .editorconfig
    ("Settings | Editor | Code Style") have priority (will overwrite) over your IDE settings.
 
-[Docker]: https://github.com/QubitPi/fast-ws/blob/master/Dockerfile
-[Docker-based integration tests]: https://github.com/QubitPi/fast-ws/blob/master/src/test/groovy/com/qubitpi/fastws/DockerITSpec.groovy
+[Docker]: https://github.com/QubitPi/chatbot-ws/blob/master/Dockerfile
+[Docker-based integration tests]: https://github.com/QubitPi/chatbot-ws/blob/master/src/test/groovy/com/qubitpi/fastws/DockerITSpec.groovy
 
 [jcabi-mysql]: https://mysql.jcabi.com/
-[fast-ws Dockerfile]: https://github.com/QubitPi/fast-ws/blob/master/Dockerfile
+[chatbot-ws Dockerfile]: https://github.com/QubitPi/chatbot-ws/blob/master/Dockerfile
 
-[style config]: https://github.com/QubitPi/fast-ws/blob/master/FastWS-Project-intellij-code-style.xml
+[style config]: https://github.com/QubitPi/chatbot-ws/blob/master/FastWS-Project-intellij-code-style.xml
 
 [Testcontainers]: https://qubitpi.github.io/testcontainers-java/
