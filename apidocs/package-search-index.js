@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.qubitpi.chatbotws.application"},{"l":"com.qubitpi.chatbotws.config"},{"l":"com.qubitpi.chatbotws.web.endpoints"},{"l":"com.qubitpi.chatbotws.web.filters"}];updateSearchResults();
