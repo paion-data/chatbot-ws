@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 Jiaqi Liu
+ * Copyright 2025 Jiaqi Liu. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qubitpi.fastws
+package com.qubitpi.chatbotws
 
-import com.qubitpi.fastws.resource.TestEndpoint
+import com.qubitpi.chatbotws.resource.TestEndpoint
 
 import org.eclipse.jetty.server.Server
 import org.glassfish.jersey.server.ResourceConfig

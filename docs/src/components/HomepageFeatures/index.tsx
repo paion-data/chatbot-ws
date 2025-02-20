@@ -1,5 +1,5 @@
 /**
- * Copyright 2025 Jiaqi Liu
+ * Copyright 2025 Jiaqi Liu. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,7 +44,7 @@ const FeatureList: FeatureItem[] = [
     id: 'not-used',
     description: (
       <>
-        FastWS lets us focus on our business logics, and the template will do the chores.
+        ChatbotWS lets us focus on our business logics, and the template will do the chores.
       </>
     ),
   },
@@ -79,7 +79,7 @@ const FeatureList: FeatureItem[] = [
     id: 'not-used',
     description: (
       <>
-        FastWS supports running in containerized environment out of the box, making its deployment fast and convenient.
+        ChatbotWS supports running in containerized environment out of the box, making its deployment fast and convenient.
       </>
     ),
   },
@@ -90,7 +90,7 @@ const FeatureList: FeatureItem[] = [
     id: 'not-used',
     description: (
       <>
-        FastWS is 100% open source and available on <a href="https://github.com/QubitPi/chatbot-ws">Github</a>. Released
+        ChatbotWS is 100% open source and available on <a href="https://github.com/QubitPi/chatbot-ws">Github</a>. Released
         under the commercial-friendly
         <a href="http://www.apache.org/licenses/LICENSE-2.0.html"> Apache License, Version 2.0.</a>
       </>

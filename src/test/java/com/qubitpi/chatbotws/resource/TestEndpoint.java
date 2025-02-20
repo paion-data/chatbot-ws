@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 Jiaqi Liu
+ * Copyright 2025 Jiaqi Liu. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,50 +13,42 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qubitpi.fastws.web.endpoints;
+package com.qubitpi.chatbotws.resource;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.qubitpi.chatbotws.JettyServerFactory;
 
-import jakarta.inject.Inject;
+import org.glassfish.jersey.server.ResourceConfig;
+
 import jakarta.inject.Singleton;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
-import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import net.jcip.annotations.Immutable;
 import net.jcip.annotations.ThreadSafe;
 
 /**
- * Endpoint that contains a basic sanity-check.
+ * A JAX-RS resource class used for testing {@link JettyServerFactory}.
+ *
+ * see {@link JettyServerFactory#newInstance(int, String, ResourceConfig)} for why we
+ * need to prefix @Path with "/v1"
  */
 @Singleton
 @Immutable
 @ThreadSafe
-@Path("/data")
-@Produces(MediaType.APPLICATION_JSON)
-public class DataServlet {
-
-    private static final ObjectMapper JSON_MAPPER = new ObjectMapper();
+@Path("/v1/example")
+public class TestEndpoint {
 
     /**
-     * Constructor for dependency injection.
-     */
-    @Inject
-    public DataServlet() {
-        // intentionally left blank
-    }
-
-    /**
-     * A webservice sanity-check endpoint.
+     * A sanity check endpoint that simply returns a 200 response.
      *
-     * @return 200 OK response
+     * @return a simple success response
      */
     @GET
-    @Path("/healthcheck")
-    public Response healthcheck() {
+    @Path("/test")
+    public Response test() {
         return Response
                 .status(Response.Status.OK)
+                .entity("SUCCESS")
                 .build();
     }
 }

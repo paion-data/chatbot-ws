@@ -9,7 +9,7 @@ Template.
 Preparing for Local Development
 -------------------------------
 
-This section discusses the one-time setup in order to develop FastWS.
+This section discusses the one-time setup in order to develop ChatbotWS.
 
 ### Installing Java & Maven (on Mac)
 
@@ -38,7 +38,7 @@ Make sure to execute the `sudo ln -sfn`, `echo 'export PATH=...`, and the `expor
 
 :::tip
 
-FastWS is built using maven. Maven uses a separate JDK version, which can be seen via `mvn -v`. If it's not JDK 17, we
+ChatbotWS is built using maven. Maven uses a separate JDK version, which can be seen via `mvn -v`. If it's not JDK 17, we
 should have Maven point to our JDK 17 using [JAVA_HOME](https://stackoverflow.com/a/2503679):
 
 ```bash
@@ -61,7 +61,7 @@ OpenJDK 64-Bit Server VM (build 17.0.10+9, mixed mode)
 
 ### Installing Docker Engine
 
-FastWS has [Docker-based integration tests]; it also supports
+ChatbotWS has [Docker-based integration tests]; it also supports
 [running template webserivce in Docker][chatbot-ws Dockerfile]. Docker can be installed by following its
 [official instructions](https://docs.docker.com/desktop/install/mac-install/)
 
@@ -73,11 +73,11 @@ git clone git@github.com:QubitPi/chatbot-ws.git
 cd chatbot-ws
 ```
 
-### Syncing up with FastWS's Code Styles with IntelliJ
+### Syncing up with ChatbotWS's Code Styles with IntelliJ
 
-For the moment, we have distilled the most important code style conventions with respect to FastWS's code as IntelliJ
+For the moment, we have distilled the most important code style conventions with respect to ChatbotWS's code as IntelliJ
 settings. If IntelliJ is used for IDE, we may import these code style settings by importing the
-[FastWS-Project-intellij-code-style.xml][style config] file in the root of the repo. The setting for the project will
+[ChatbotWS-Project-intellij-code-style.xml][style config] file in the root of the repo. The setting for the project will
 appear as a new Scheme named "chatbot-ws-Project" under IDE's __Editor__ -> __Code Style__ section.
 
 Please also enable "remove unused imports" by __Editor__ -> __General__ -> __Auto Import__ -> __Optimize Imports on the
@@ -175,7 +175,7 @@ Running Webservice in Standalone Jetty
 
 ### Download Jetty
 
-For JDK __17__, which is the version FastWS runs on, it's been tested that Jetty _11.0.15_ worked. Hence, we will use
+For JDK __17__, which is the version ChatbotWS runs on, it's been tested that Jetty _11.0.15_ worked. Hence, we will use
 ["11.0.15" release](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/11.0.15/jetty-home-11.0.15.tar.gz) as
 an example:
 
@@ -253,11 +253,11 @@ If tabs still come out at 2 spaces when hitting TAB or Enter, not 4 spaces, try:
    ("Settings | Editor | Code Style") have priority (will overwrite) over your IDE settings.
 
 [Docker]: https://github.com/QubitPi/chatbot-ws/blob/master/Dockerfile
-[Docker-based integration tests]: https://github.com/QubitPi/chatbot-ws/blob/master/src/test/groovy/com/qubitpi/fastws/DockerITSpec.groovy
+[Docker-based integration tests]: https://github.com/QubitPi/chatbot-ws/blob/master/src/test/groovy/com/qubitpi/chatbotws/DockerITSpec.groovy
 
 [jcabi-mysql]: https://mysql.jcabi.com/
 [chatbot-ws Dockerfile]: https://github.com/QubitPi/chatbot-ws/blob/master/Dockerfile
 
-[style config]: https://github.com/QubitPi/chatbot-ws/blob/master/FastWS-Project-intellij-code-style.xml
+[style config]: https://github.com/QubitPi/chatbot-ws/blob/master/ChatbotWS-Project-intellij-code-style.xml
 
 [Testcontainers]: https://qubitpi.github.io/testcontainers-java/

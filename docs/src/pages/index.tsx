@@ -1,5 +1,5 @@
 /**
- * Copyright 2025 Jiaqi Liu
+ * Copyright 2025 Jiaqi Liu. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ function HomepageHeader() {
       <div className="container">
         <img
           className={clsx(styles.heroBannerLogo, "margin-vert--md")}
-          alt="FastWS logo"
+          alt="ChatbotWS logo"
           src={useBaseUrl("img/logo-with-text-white-outline.svg")}
         />
         <p className="hero__subtitle">

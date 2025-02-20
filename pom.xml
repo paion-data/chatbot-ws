@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>FastWS</name>
-    <description>Template project for building Jersey webservice running in Jetty</description>
+    <name>ChatbotWS</name>
+    <description>Template project for building chatbot webservice running in Jetty</description>
     <url>https://github.com/QubitPi/chatbot-ws</url>
 
     <developers>

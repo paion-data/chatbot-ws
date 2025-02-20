@@ -1,5 +1,5 @@
 /**
- * Copyright 2025 Jiaqi Liu
+ * Copyright 2025 Jiaqi Liu. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,11 +18,11 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'FastWS',
+  title: 'ChatbotWS',
   tagline: 'You can innovate given the right technology',
   favicon: 'img/favicon.ico',
 
-  url: 'https://fastws.qubitpi.org',
+  url: 'https://chatbot.qubitpi.org',
   baseUrl: '/',
 
   organizationName: 'QubitPi',
@@ -63,9 +63,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'FastWS',
+      title: 'ChatbotWS',
       logo: {
-        alt: 'FastWS Logo',
+        alt: 'ChatbotWS Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -77,7 +77,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: "https://fastws.qubitpi.org/apidocs",
+          href: "https://chatbot.qubitpi.org/apidocs",
           label: "API",
           position: "left",
         },

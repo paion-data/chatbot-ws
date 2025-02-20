@@ -5,12 +5,16 @@ ChatbotWS
 [![GitHub Workflow Status][GitHub Workflow Status]](https://github.com/QubitPi/chatbot-ws/actions/workflows/ci-cd.yaml)
 [![Apache License Badge]][Apache License, Version 2.0]
 
-__FastWS__ is a [JSR 370] webservice that proxies LLM chatbot such as OpenAI. At the end of the day, ChatbotWS helps
-organization quickly deploy and manage AI webservices in a production quality
+__ChatbotWS__ is a [JSR 370] webservice template that lets us spin up Java webservice quickly through
+[GitHub templates].  Whether we want to create a chatbot that leverages popular APIs such as ChatGPT or connect to our
+own custom service, this template can do it all! Explore [chatbot.qubitpi.org](https://chatbot.qubitpi.org/) to view all
+of its available features, how to use them, examples and more!
 
 ✨ Features
 -----------
 
+- Connect to any API
+- Data storage
 - Out-of-the-box healthcheck endpoint
 - Docusaurus-based documentation site freely hosted on GitHub Pages
 - Dockerized webservice
@@ -65,10 +69,11 @@ The use and distribution terms for [chatbot-ws]() are covered by the [Apache Lic
 [Apache License Badge]: https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white
 [Apache License, Version 2.0]: https://www.apache.org/licenses/LICENSE-2.0
 
-[Documentation]: https://fastws.qubitpi.org/
+[Documentation]: https://chatbot.qubitpi.org/
 
+[GitHub templates]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository#about-template-repositories
 [GitHub Workflow Status]: https://img.shields.io/github/actions/workflow/status/QubitPi/chatbot-ws/ci-cd.yaml?branch=master&logo=github&style=for-the-badge
 
 [Java Version Badge]: https://img.shields.io/badge/Java-17-brightgreen?style=for-the-badge&logo=OpenJDK&logoColor=white
-[chatbot-ws]: https://fastws.qubitpi.org/
+[chatbot-ws]: https://chatbot.qubitpi.org/
 [JSR 370]: https://jcp.org/en/jsr/detail?id=370
