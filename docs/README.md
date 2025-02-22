@@ -10,14 +10,14 @@ The documentation website has been built using [Docusaurus 2](https://docusaurus
 
 ```
 # Install node dependencies:
-$ npm install
+$ yarn install
 
 # automatically build and serve:
-$ npm run start
+$ yarn start
 
 # build and serve for production:
-$ npm run build
-$ npm run serve
+$ yarn build
+$ yarn serve
 ```
 
 ## :heart: Contributions
