@@ -91,7 +91,9 @@ jobs:
           distribution: ${{ env.JDK_DISTRIBUTION }}
       - name: Install dependencies
         working-directory: docs
-        run: yarn
+        run: |
+          yarn set version stable
+          yarn
       - name: Build documentations
         working-directory: docs
         run: yarn build
