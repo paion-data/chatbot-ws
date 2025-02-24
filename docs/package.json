@@ -1,6 +1,6 @@
 {
-  "name": "website",
-  "version": "0.0.0",
+  "name": "documentation",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -16,6 +16,7 @@
   "dependencies": {
     "@docusaurus/core": "^3.1.1",
     "@docusaurus/preset-classic": "^3.1.1",
+    "@docusaurus/theme-common": "*",
     "@docusaurus/theme-search-algolia": "^3.1.1",
     "@google-web-components/google-chart": "^5.0.5",
     "@lit-labs/react": "^2.1.3",
