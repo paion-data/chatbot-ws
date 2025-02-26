@@ -87,7 +87,7 @@ jobs:
       - name: Setup yarn
         run: |
           corepack enable
-          yarn set version berry
+          yarn set version latest
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
