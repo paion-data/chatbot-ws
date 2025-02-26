@@ -138,25 +138,25 @@ export default function CreateComponent(props) {
       } ${allowPointerEvents ? 'start-page-main-pointer-events' : 'start-page-main-no-pointer-events'}`}
     >
       <div className={`start-page-text start-page-large-text ${displayInstall ? 'start-page-main-details-visible' : ''}`}>
-        1. Visit Project
+        1. Visit OpenAI
       </div>
       <div className={`start-page-text start-page-small-text ${displayInstall ? 'start-page-main-details-visible' : ''}`}>
         Visit {' '}
-        <a href="https://github.com/QubitPi/chatbot-ws" target="_blank">
-          QubtiPi/chatbot-ws
+        <a href="https://platform.openai.com/api-keys" target="_blank">
+          API key dashboard
         </a>{' '}
-        on GitHub.
+        on OpenAI.
       </div>
       <div className={`start-page-text ${displayDefineMarkup ? 'start-page-main-details-visible' : ''}`}>
-        2. Clone Project
+        2. Create an API key in the dashboard
       </div>
-      <div
-        className={`start-page-text start-page-small-text start-page-code ${
-          displayDefineMarkup ? 'start-page-main-details-visible' : ''
-        }`}
-      >
-        {`git clone git@github.com:QubitPi/chatbot-ws.git`}
-      </div>
+      {/*<div*/}
+      {/*  className={`start-page-text start-page-small-text start-page-code ${*/}
+      {/*    displayDefineMarkup ? 'start-page-main-details-visible' : ''*/}
+      {/*  }`}*/}
+      {/*>*/}
+      {/*  {`git clone git@github.com:QubitPi/chatbot-ws.git`}*/}
+      {/*</div>*/}
       <div className={`start-page-text ${displayDone ? 'start-page-main-details-visible' : ''}`}>All done!</div>
       {/*<div className={`start-page-text ${displayExamplesTitle ? 'start-page-main-details-visible' : ''}`}>*/}
       {/*  Live code examples:*/}
@@ -169,7 +169,7 @@ export default function CreateComponent(props) {
         }`}
         onClick={() => navigate(setAllowPointerEvents, setFadeOutContent, setInitialDisplay, props.setOptionNumber, 3)}
       >
-        Configure OpenAI &#8594;
+        Spin up Docker Container &#8594;
       </div>
     </div>
   );

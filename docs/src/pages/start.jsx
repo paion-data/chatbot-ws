@@ -37,9 +37,9 @@ function Main() {
         <Options
           setOptionNumber={setOptionNumberWithQuickerTransitions}
           options={[
-            {text: 'Get source code', number: 2},
-            {text: 'Configure OpenAI', number: 3},
-            {text: 'Spin up the chatbot', number: 6},
+            {text: 'Configure OpenAI', number: 2},
+            {text: 'Spin up Docker Container', number: 3},
+            {text: 'Start chatting with bot!', number: 6},
           ]}
           quickEntryTransition={quickEntryTransition}
         ></Options>
