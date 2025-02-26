@@ -138,34 +138,30 @@ export default function CreateComponent(props) {
       } ${allowPointerEvents ? 'start-page-main-pointer-events' : 'start-page-main-no-pointer-events'}`}
     >
       <div className={`start-page-text start-page-large-text ${displayInstall ? 'start-page-main-details-visible' : ''}`}>
-        1. Install
+        1. Visit Project
       </div>
       <div className={`start-page-text start-page-small-text ${displayInstall ? 'start-page-main-details-visible' : ''}`}>
-        Add the component via an{' '}
-        <a href="https://deepchat.dev/docs/installation" target="_blank">
-          npm
+        Visit {' '}
+        <a href="https://github.com/QubitPi/chatbot-ws" target="_blank">
+          QubtiPi/chatbot-ws
         </a>{' '}
-        dependency or a{' '}
-        <a href="https://deepchat.dev/docs/installation" target="_blank">
-          script
-        </a>
-        .
+        on GitHub.
       </div>
       <div className={`start-page-text ${displayDefineMarkup ? 'start-page-main-details-visible' : ''}`}>
-        2. Define it in your markup
+        2. Clone Project
       </div>
       <div
         className={`start-page-text start-page-small-text start-page-code ${
           displayDefineMarkup ? 'start-page-main-details-visible' : ''
         }`}
       >
-        {`<deep-chat></deep-chat>`}
+        {`git clone git@github.com:QubitPi/chatbot-ws.git`}
       </div>
       <div className={`start-page-text ${displayDone ? 'start-page-main-details-visible' : ''}`}>All done!</div>
-      <div className={`start-page-text ${displayExamplesTitle ? 'start-page-main-details-visible' : ''}`}>
-        Live code examples:
-      </div>
-      <Logos displayLogos={displayLogos} itemsHoverable={itemsHoverable}></Logos>
+      {/*<div className={`start-page-text ${displayExamplesTitle ? 'start-page-main-details-visible' : ''}`}>*/}
+      {/*  Live code examples:*/}
+      {/*</div>*/}
+      {/*<Logos displayLogos={displayLogos} itemsHoverable={itemsHoverable}></Logos>*/}
       <div
         id="start-page-create-component-next"
         className={`start-page-text start-page-navigation ${displayNavigation ? 'start-page-main-details-visible' : ''} ${
@@ -173,7 +169,7 @@ export default function CreateComponent(props) {
         }`}
         onClick={() => navigate(setAllowPointerEvents, setFadeOutContent, setInitialDisplay, props.setOptionNumber, 3)}
       >
-        Connect to a service &#8594;
+        Configure OpenAI &#8594;
       </div>
     </div>
   );
