@@ -92,23 +92,23 @@ const config = {
             position: 'left',
             label: 'Start',
           },
-          {
-            type: 'docSidebar',
-            position: 'left',
-            label: 'Docs',
-            sidebarId: 'docs',
-          },
-          {
-            type: 'docSidebar',
-            position: 'left',
-            label: 'Examples',
-            sidebarId: 'examples',
-          },
-          {
-            to: 'playground',
-            position: 'left',
-            label: 'Playground',
-          },
+          // {
+          //   type: 'docSidebar',
+          //   position: 'left',
+          //   label: 'Docs',
+          //   sidebarId: 'docs',
+          // },
+          // {
+          //   type: 'docSidebar',
+          //   position: 'left',
+          //   label: 'Examples',
+          //   sidebarId: 'examples',
+          // },
+          // {
+          //   to: 'playground',
+          //   position: 'left',
+          //   label: 'Playground',
+          // },
           {
             href: 'https://github.com/QubitPi/chatbot-ws',
             position: 'right',
