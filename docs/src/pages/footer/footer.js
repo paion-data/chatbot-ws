@@ -5,11 +5,11 @@ export default function Footer() {
   return (
     <div id="footer">
       Built by{' '}
-      <a href="https://github.com/OvidijusParsiunas" target="_blank">
-        Ovidijus Parsiunas
+      <a href="https://paion-data.com" target="_blank">
+        Paion Data
       </a>
       . Source code is available on{' '}
-      <a href="https://github.com/OvidijusParsiunas/deep-chat" target="_blank">
+      <a href="https://github.com/paion-data/chatbot-ws" target="_blank">
         GitHub
       </a>
       .
