@@ -69,11 +69,11 @@ The use and distribution terms for [chatbot-ws]() are covered by the [Apache Lic
 [Apache License Badge]: https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white
 [Apache License, Version 2.0]: https://www.apache.org/licenses/LICENSE-2.0
 
-[Documentation]: https://chatbot.qubitpi.org/
+[Documentation]: https://chatbot.paion-data.com/
 
 [GitHub templates]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository#about-template-repositories
 [GitHub Workflow Status]: https://img.shields.io/github/actions/workflow/status/QubitPi/chatbot-ws/ci-cd.yaml?branch=master&logo=github&style=for-the-badge
 
 [Java Version Badge]: https://img.shields.io/badge/Java-17-brightgreen?style=for-the-badge&logo=OpenJDK&logoColor=white
-[chatbot-ws]: https://chatbot.qubitpi.org/
+[chatbot-ws]: https://chatbot.paion-data.com/
 [JSR 370]: https://jcp.org/en/jsr/detail?id=370

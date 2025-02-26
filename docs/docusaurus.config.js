@@ -7,7 +7,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Chatbot Webservice',
   tagline: 'Customizable Chatbot Webservice Template',
-  url: 'https://chatbot.qubitpi.org',
+  url: 'https://chatbot.paion-data.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -68,7 +68,7 @@ const config = {
           name: 'og:image',
           content: 'https://raw.githubusercontent.com/OvidijusParsiunas/deep-chat/main/assets/readme/social-media-4.png',
         },
-        {name: 'og:url', content: 'https://chatbot.qubitpi.org/'},
+        {name: 'og:url', content: 'https://chatbot.paion-data.com/'},
         {name: 'twitter:title', content: 'Deep Chat'},
         {name: 'twitter:card', content: 'summary_large_image'},
         {name: 'twitter:site', content: '@deepchat'},
