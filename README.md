@@ -24,12 +24,20 @@ of its available features, how to use them, examples and more!
 🚀 Quick Start
 --------------
 
+### Spin Up a Container
+
 Please make sure Docker is installed
 ([_Installing Docker_](https://docker.qubitpi.org/desktop/setup/install/mac-install/)), then execute this on-click
 commands:
 
+> [!IMPORTANT]
+>
+> Please replace the `OPENAI_API_KEY` below with the actual key which can be obtained
+> [here](https://platform.openai.com/api-keys)
+
 ```console
-docker run --name=chatbot-ws -it -p 8080:8080 jack20191124/chatbot-ws
+docker run --name=chatbot-ws -it -p 8080:8080 jack20191124/chatbot-ws \
+    -e OPENAI_API_KEY='OPENAI_API_KEY'
 ```
 
 That's it. A healthcheck endpoint can be pinned with
@@ -55,6 +63,14 @@ $ curl -v localhost:8080/v1/healthcheck
 < Server: Jetty(11.0.15)
 <
 * Connection #0 to host localhost left intact
+```
+
+### Send First Chat Request
+
+```console
+curl --location 'http://localhost:8080/v1/openai/chat' --header 'Content-Type: application/json' --data '{
+    "message": "Hello"
+}' -v
 ```
 
 Developer can now start adding business values without repeating the time-consuming scaffolding works. To proceed from
