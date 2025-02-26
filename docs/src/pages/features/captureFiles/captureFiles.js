@@ -7,8 +7,8 @@ function RightPanel() {
   return (
     <div id="capture-files-right-panel" className="feature-panel">
       <div className="capture-files-text">
-        Deep Chat can be used to create new files inside the component! Click the camera button to capture photos or use
-        the microphone button to record audio.
+        Deep Chat can be used to archive chat data, helping organizations to learn how to provider better service to
+        customers
       </div>
     </div>
   );
@@ -41,7 +41,7 @@ export default function CaptureFiles() {
   return (
     <div>
       <div id="capture-files-sub-header" className="feature-sub-header">
-        Use Camera and Microphone
+        Make Data Valuable for Organization
       </div>
       <div id="capture-files-panels">
         <OnVisibleAnimation beforeClass={'capture-panels-distributed'} afterClass={'capture-panels-close'} timeoutMS={0}>
