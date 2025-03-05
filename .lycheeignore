@@ -4,4 +4,4 @@ https://uel.java.net/
 https://www.openapis.org/
 https://jcp.org/*
 http://localhost:8080/*
-https://*/ci-cd.yaml
+https://github.com/paion-data/chatbot-ws/blob/master/src/test/groovy/com/paiondata/chatbotws/DockerITSpec.groovy

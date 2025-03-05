@@ -22,6 +22,6 @@ More info about difference between JAX-RS and Spring can be found in [this threa
 - [Configuration](configuration)
 
 [JAX-RS]: https://jcp.org/en/jsr/detail?id=370
-[ChatbotWS]: https://chatbot.qubitpi.org/
+[ChatbotWS]: https://chatbot.paion-data.com/
 [Jersey]: https://qubitpi.github.io/jersey/
 [Jetty]: https://en.wikipedia.org/wiki/Jetty_(web_server)
