@@ -13,10 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qubitpi.chatbotws.web.endpoints
+package com.paiondata.chatbotws.web.endpoints
 
-import com.qubitpi.chatbotws.JettyServerFactory
-import com.qubitpi.chatbotws.application.ResourceConfig
+
+import com.paiondata.chatbotws.JettyServerFactory
+import com.paiondata.chatbotws.application.ResourceConfig
 
 import org.eclipse.jetty.server.Server
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qubitpi.chatbotws
+package com.paiondata.chatbotws
 
 import org.testcontainers.containers.GenericContainer
 import org.testcontainers.images.PullPolicy

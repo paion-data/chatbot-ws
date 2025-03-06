@@ -2,12 +2,12 @@ ChatbotWS
 =========
 
 ![Java Version Badge][Java Version Badge]
-[![GitHub Workflow Status][GitHub Workflow Status]](https://github.com/QubitPi/chatbot-ws/actions/workflows/ci-cd.yaml)
+[![GitHub Workflow Status][GitHub Workflow Status]](https://github.com/paion-data/chatbot-ws/actions/workflows/ci-cd.yaml)
 [![Apache License Badge]][Apache License, Version 2.0]
 
 __ChatbotWS__ is a [JSR 370] webservice template that lets us spin up Java webservice quickly through
 [GitHub templates]. Whether we want to create a chatbot that leverages popular APIs such as ChatGPT or connect to our
-own custom service, this template can do it all! Explore [chatbot.qubitpi.org](https://chatbot.qubitpi.org/) to view all
+own custom service, this template can do it all! Explore [chatbot.paion-data.com](https://chatbot.paion-data.com/) to view all
 of its available features, how to use them, examples and more!
 
 ✨ Features
@@ -27,7 +27,7 @@ of its available features, how to use them, examples and more!
 ### Spinning Up a Container
 
 Please make sure Docker is installed
-([_Installing Docker_](https://docker.qubitpi.org/desktop/setup/install/mac-install/)), then execute this on-click
+([_Installing Docker_](https://docs.docker.com/desktop/setup/install/mac-install/)), then execute this on-click
 commands:
 
 > [!IMPORTANT]
@@ -37,7 +37,7 @@ commands:
 
 ```console
 export OPENAI_API_KEY=...
-docker run  -it -p 8080:8080 -e OPENAI_API_KEY=$OPENAI_API_KEY jack20191124/chatbot-ws
+docker run  -it -p 8080:8080 -e OPENAI_API_KEY=$OPENAI_API_KEY paiondatahub/chatbot-ws
 ```
 
 That's it. A healthcheck endpoint can be pinned with
@@ -85,11 +85,11 @@ The use and distribution terms for [chatbot-ws]() are covered by the [Apache Lic
 [Apache License Badge]: https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white
 [Apache License, Version 2.0]: https://www.apache.org/licenses/LICENSE-2.0
 
-[Documentation]: https://chatbot.qubitpi.org/
+[Documentation]: https://chatbot.paion-data.com/
 
 [GitHub templates]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository#about-template-repositories
-[GitHub Workflow Status]: https://img.shields.io/github/actions/workflow/status/QubitPi/chatbot-ws/ci-cd.yaml?branch=master&logo=github&style=for-the-badge
+[GitHub Workflow Status]: https://img.shields.io/github/actions/workflow/status/paion-data/chatbot-ws/ci-cd.yaml?branch=master&logo=github&style=for-the-badge
 
 [Java Version Badge]: https://img.shields.io/badge/Java-17-brightgreen?style=for-the-badge&logo=OpenJDK&logoColor=white
-[chatbot-ws]: https://chatbot.qubitpi.org/
+[chatbot-ws]: https://chatbot.paion-data.com/
 [JSR 370]: https://jcp.org/en/jsr/detail?id=370

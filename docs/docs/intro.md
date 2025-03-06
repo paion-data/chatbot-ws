@@ -32,7 +32,7 @@ commands:
 
 ```console
 export OPENAI_API_KEY=...
-docker run  -it -p 8080:8080 -e OPENAI_API_KEY=$OPENAI_API_KEY jack20191124/chatbot-ws
+docker run  -it -p 8080:8080 -e OPENAI_API_KEY=$OPENAI_API_KEY paiondatahub/chatbot-ws
 ```
 
 That's it. A healthcheck endpoint can be pinned with
@@ -76,5 +76,5 @@ details:
 - [Configuration](configuration)
 
 [JAX-RS]: https://jcp.org/en/jsr/detail?id=370
-[ChatbotWS]: https://chatbot.qubitpi.org/
+[ChatbotWS]: https://chatbot.paion-data.com/
 [Jetty]: https://en.wikipedia.org/wiki/Jetty_(web_server)
