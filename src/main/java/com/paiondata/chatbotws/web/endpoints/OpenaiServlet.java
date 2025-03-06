@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 Jiaqi Liu. All rights reserved.
+ * Copyright 2025 Paion Data. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,8 +20,8 @@ import com.paiondata.chatbotws.config.OpenaiConfig;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.aeonbits.owner.ConfigFactory;
+import org.springframework.stereotype.Component;
 
-import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import jakarta.validation.constraints.NotNull;
 import jakarta.ws.rs.Consumes;
@@ -45,6 +45,7 @@ import java.util.Objects;
 /**
  * Endpoint that delegates chatbot to OpenAI API.
  */
+@Component
 @Singleton
 @Immutable
 @ThreadSafe
@@ -55,14 +56,6 @@ public class OpenaiServlet {
     private static final ObjectMapper JSON_MAPPER = new ObjectMapper();
     private static final OpenaiConfig OPEN_AI_CONFIG = ConfigFactory.create(OpenaiConfig.class);
     private static final HttpClient HTTP_CLIENT = HttpClient.newHttpClient();
-
-    /**
-     * Constructor for dependency injection.
-     */
-    @Inject
-    public OpenaiServlet() {
-        // intentionally left blank
-    }
 
     /**
      * Chatbot endpoint.

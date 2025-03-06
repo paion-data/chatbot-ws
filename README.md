@@ -5,7 +5,7 @@ ChatbotWS
 [![GitHub Workflow Status][GitHub Workflow Status]](https://github.com/paion-data/chatbot-ws/actions/workflows/ci-cd.yaml)
 [![Apache License Badge]][Apache License, Version 2.0]
 
-__ChatbotWS__ is a [JSR 370] webservice template that lets us spin up Java webservice quickly through
+__ChatbotWS__ is a Spring webservice template that lets us spin up Java webservice quickly through
 [GitHub templates]. Whether we want to create a chatbot that leverages popular APIs such as ChatGPT or connect to our
 own custom service, this template can do it all! Explore [chatbot.paion-data.com](https://chatbot.paion-data.com/) to view all
 of its available features, how to use them, examples and more!
@@ -92,4 +92,3 @@ The use and distribution terms for [chatbot-ws]() are covered by the [Apache Lic
 
 [Java Version Badge]: https://img.shields.io/badge/Java-17-brightgreen?style=for-the-badge&logo=OpenJDK&logoColor=white
 [chatbot-ws]: https://chatbot.paion-data.com/
-[JSR 370]: https://jcp.org/en/jsr/detail?id=370

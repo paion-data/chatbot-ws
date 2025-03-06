@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 Jiaqi Liu. All rights reserved.
+ * Copyright 2025 Paion Data. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,12 +15,13 @@
  */
 package com.paiondata.chatbotws.application;
 
+import com.paiondata.chatbotws.web.endpoints.HealthcheckServlet;
 import com.paiondata.chatbotws.web.endpoints.OpenaiServlet;
 import com.paiondata.chatbotws.web.filters.CorsFilter;
 
 import org.glassfish.hk2.utilities.Binder;
+import org.springframework.stereotype.Component;
 
-import jakarta.inject.Inject;
 import jakarta.ws.rs.ApplicationPath;
 import net.jcip.annotations.Immutable;
 import net.jcip.annotations.ThreadSafe;
@@ -28,19 +29,18 @@ import net.jcip.annotations.ThreadSafe;
 /**
  * The resource configuration for the web applications.
  */
+@Component
 @Immutable
 @ThreadSafe
 @ApplicationPath("v1")
 public class ResourceConfig extends org.glassfish.jersey.server.ResourceConfig {
 
-    private static final String ENDPOINT_PACKAGE = OpenaiServlet.class.getPackage().getName();
-
     /**
      * DI Constructor that allows for finer dependency injection control.
      */
-    @Inject
     public ResourceConfig() {
-        packages(ENDPOINT_PACKAGE);
+        register(HealthcheckServlet.class);
+        register(OpenaiServlet.class);
 
         register(CorsFilter.class);
 
