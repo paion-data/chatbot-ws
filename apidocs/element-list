@@ -1,4 +1,4 @@
-com.qubitpi.chatbotws.application
-com.qubitpi.chatbotws.config
-com.qubitpi.chatbotws.web.endpoints
-com.qubitpi.chatbotws.web.filters
+com.paiondata.chatbotws.application
+com.paiondata.chatbotws.config
+com.paiondata.chatbotws.web.endpoints
+com.paiondata.chatbotws.web.filters
