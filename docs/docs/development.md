@@ -5,6 +5,15 @@ title: Development
 
 The following guide is intended to help developers who maintain or want to make changes to the Chatbot WS template.
 
+Architecture
+------------
+
+Unlike it's [upstream version](https://github.com/QubitPi/chatbot-ws) which is a Jersey-Jetty webservice, this fork is a
+Spring webservice which currently wraps the Jersey resources in Spring context using
+[spring-boot-starter-jersey](https://docs.spring.io/spring-boot/reference/web/servlet.html#web.servlet.jersey):
+
+![](./img/architecture.png)
+
 Preparing for Local Development
 -------------------------------
 
@@ -182,6 +191,9 @@ If we see the following output, it means the container is running properly and r
 
 Running Webservice in Standalone Jetty
 --------------------------------------
+
+chatbot-ws is supposed to be running as a
+[Spring WAR inside Jetty](https://spring.io/blog/2014/03/07/deploying-spring-boot-applications#what-about-the-java-ee-application-server).
 
 ### Download Jetty
 
