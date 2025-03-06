@@ -112,7 +112,7 @@ jobs:
           enable_jekyll: false
           user_name: ${{ env.USER }}
           user_email: ${{ env.EMAIL }}
-          cname: chatbot.qubitpi.org
+          cname: chatbot.paion-data.com
 
   docker-image:
     name: Build Test & Release Development Docker Image
@@ -141,7 +141,7 @@ jobs:
         if: github.ref == 'refs/heads/master'
         uses: docker/login-action@v2
         with:
-          username: jack20191124
+          username: paiondatahub
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Push image to DockerHub
         if: github.ref == 'refs/heads/master'
@@ -149,12 +149,12 @@ jobs:
         with:
           context: .
           push: true
-          tags: jack20191124/chatbot-ws:latest
+          tags: paiondatahub/chatbot-ws:latest
       - name: Push image Description
         if: github.ref == 'refs/heads/master'
         uses: peter-evans/dockerhub-description@v4
         with:
-          username: jack20191124
+          username: paiondatahub
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: jack20191124/chatbot-ws
+          repository: paiondatahub/chatbot-ws
           readme-filepath: README.md

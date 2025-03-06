@@ -69,7 +69,7 @@ Getting Source Code
 -------------------
 
 ```bash
-git clone git@github.com:QubitPi/chatbot-ws.git
+git clone git@github.com:paion-data/chatbot-ws.git
 cd chatbot-ws
 ```
 
@@ -117,7 +117,7 @@ Running Webservice in Docker
 ----------------------------
 
 Please make sure Docker is installed
-([_Installing Docker_](https://docker.qubitpi.org/desktop/setup/install/mac-install/)), then execute the following
+([_Installing Docker_](https://docs.docker.com/desktop/setup/install/mac-install/)), then execute the following
 commands:
 
 ### Getting the Image
@@ -126,10 +126,10 @@ We can obtain the image in one of the 2 approaches below:
 
 #### Docker Hub
 
-We can pull the image from [my docker hub](https://hub.docker.com/r/jack20191124/chatbot-ws/):
+We can pull the image from [Paion Data's docker hub](https://hub.docker.com/r/jack20191124/chatbot-ws/):
 
 ```bash
-docker pull jack20191124/chatbot-ws
+docker pull paiondatahub/chatbot-ws
 ```
 
 #### GitHub
@@ -137,12 +137,12 @@ docker pull jack20191124/chatbot-ws
 We could also build the image from [source][Docker]:
 
 ```bash
-git clone https://github.com/QubitPi/chatbot-ws.git
+git clone https://github.com/paion-data/chatbot-ws.git
 cd chatbot-ws
-docker build -t jack20191124/chatbot-ws .
+docker build -t paiondatahub/chatbot-ws .
 ```
 
-Please note that the `jack20191124/chatbot-ws` in the last command is the image name; we could replace
+Please note that the `paiondatahub/chatbot-ws` in the last command is the image name; we could replace
 that value with anything preferred
 
 ### Standing up a Container
@@ -150,7 +150,7 @@ that value with anything preferred
 When image is built, we can spin up an instance with
 
 ```bash
-docker run --name=chatbot-ws -it -p 8080:8080 jack20191124/chatbot-ws
+docker run --name=chatbot-ws -it -p 8080:8080 paiondatahub/chatbot-ws
 ```
 
 - __name=chatbot-ws__: the container is named "chatbot-ws". We can change it
@@ -252,12 +252,12 @@ If tabs still come out at 2 spaces when hitting TAB or Enter, not 4 spaces, try:
 2. Do you have any .editorconfig files anywhere in the path of that file? Settings from .editorconfig
    ("Settings | Editor | Code Style") have priority (will overwrite) over your IDE settings.
 
-[Docker]: https://github.com/QubitPi/chatbot-ws/blob/master/Dockerfile
-[Docker-based integration tests]: https://github.com/QubitPi/chatbot-ws/blob/master/src/test/groovy/com/qubitpi/chatbotws/DockerITSpec.groovy
+[Docker]: https://github.com/paion-data/chatbot-ws/blob/master/Dockerfile
+[Docker-based integration tests]: https://github.com/paion-data/chatbot-ws/blob/master/src/test/groovy/com/paiondata/chatbotws/DockerITSpec.groovy
 
 [jcabi-mysql]: https://mysql.jcabi.com/
-[chatbot-ws Dockerfile]: https://github.com/QubitPi/chatbot-ws/blob/master/Dockerfile
+[chatbot-ws Dockerfile]: https://github.com/paion-data/chatbot-ws/blob/master/Dockerfile
 
-[style config]: https://github.com/QubitPi/chatbot-ws/blob/master/ChatbotWS-Project-intellij-code-style.xml
+[style config]: https://github.com/paion-data/chatbot-ws/blob/master/ChatbotWS-Project-intellij-code-style.xml
 
-[Testcontainers]: https://qubitpi.github.io/testcontainers-java/
+[Testcontainers]: https://testcontainers-java.paion-data.dev

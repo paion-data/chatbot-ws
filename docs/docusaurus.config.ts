@@ -22,10 +22,10 @@ const config: Config = {
   tagline: 'You can innovate given the right technology',
   favicon: 'img/favicon.ico',
 
-  url: 'https://chatbot.qubitpi.org',
+  url: 'https://chatbot.paion-data.com',
   baseUrl: '/',
 
-  organizationName: 'QubitPi',
+  organizationName: 'paion-data',
   projectName: 'chatbot-ws',
 
   onBrokenLinks: 'warn',
@@ -45,7 +45,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/QubitPi/chatbot-ws/tree/master/docs/',
+          editUrl: 'https://github.com/paion-data/chatbot-ws/tree/master/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -77,12 +77,12 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: "https://chatbot.qubitpi.org/apidocs",
+          href: "https://chatbot.paion-data.com/apidocs",
           label: "API",
           position: "left",
         },
         {
-          href: 'https://github.com/QubitPi/chatbot-ws',
+          href: 'https://github.com/paion-data/chatbot-ws',
           label: 'GitHub',
           position: 'right',
         },
@@ -105,7 +105,7 @@ const config: Config = {
           items: [
             {
               label: 'Discussions',
-              href: 'https://github.com/QubitPi/chatbot-ws/discussions',
+              href: 'https://github.com/paion-data/chatbot-ws/discussions',
             },
           ],
         },
@@ -118,12 +118,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/QubitPi/chatbot-ws',
+              href: 'https://github.com/paion-data/chatbot-ws',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Jiaqi Liu. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Paion Data. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

@@ -4,19 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.qubitpi</groupId>
+    <groupId>com.paiondata</groupId>
     <artifactId>chatbot-ws</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>ChatbotWS</name>
     <description>Template project for building chatbot webservice running in Jetty</description>
-    <url>https://github.com/QubitPi/chatbot-ws</url>
+    <url>https://github.com/paion-data/chatbot-ws</url>
 
     <developers>
         <developer>
-            <name>Jiaqi Liu</name>
-            <url>https://github.com/QubitPi</url>
+            <name>Paion Data</name>
+            <url>https://github.com/paion-data</url>
         </developer>
     </developers>
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qubitpi.chatbotws.config;
+package com.paiondata.chatbotws.config;
 
 import org.aeonbits.owner.Config;
 

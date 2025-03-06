@@ -13,9 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qubitpi.chatbotws
+package com.paiondata.chatbotws
 
-import com.qubitpi.chatbotws.resource.TestEndpoint
+
+import com.paiondata.chatbotws.resource.TestEndpoint
 
 import org.eclipse.jetty.server.Server
 import org.glassfish.jersey.server.ResourceConfig
