@@ -221,7 +221,25 @@ mv /path/to/war-file /path/to/jetty-base/webapps/ROOT.war
 java -jar $JETTY_HOME/start.jar
 ```
 
-The webservice will run on port __8080__
+The webservice will run on port __8080__, and if it starts successfully, we should be able to see the output similar to
+the following in terminal:
+
+```console
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2025-03-06 16:52:45.243:INFO :oejshC.ROOT_war:main: Initializing Spring embedded WebApplicationContext
+2025-03-06 16:52:45.959:INFO :oejss.DefaultSessionIdManager:main: Session workerName=node0
+2025-03-06 16:52:46.612:INFO :oejs.AbstractConnector:main: Started ServerConnector@49986178{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-03-06 16:52:46.614:INFO :oejs.Server:main: Started Server@618b19ad{STARTING}[11.0.15,sto=5000] @5401ms
+```
 
 Troubleshooting
 ---------------
