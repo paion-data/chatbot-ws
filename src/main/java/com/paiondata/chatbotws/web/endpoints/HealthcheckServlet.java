@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 Jiaqi Liu. All rights reserved.
+ * Copyright 2025 Paion Data. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,8 @@
  */
 package com.paiondata.chatbotws.web.endpoints;
 
+import org.springframework.stereotype.Component;
+
 import jakarta.inject.Singleton;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -27,6 +29,7 @@ import net.jcip.annotations.ThreadSafe;
 /**
  * Endpoint that contains a basic sanity-check.
  */
+@Component
 @Singleton
 @Immutable
 @ThreadSafe
