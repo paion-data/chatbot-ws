@@ -17,7 +17,7 @@ RUN mkdir /chatbot-ws
 COPY . /chatbot-ws
 RUN cd /chatbot-ws && mvn clean package -Dmaven.test.skip=true
 
-FROM ubuntu:22.04
+FROM paiondatahub/ubuntu-base:latest
 
 LABEL maintainer="Jiaqi (Jack) Liu"
 LABEL maintainer-email="jack20220723@gmail.com"
@@ -30,12 +30,6 @@ ENV JETTY_VERSION 11.0.15
 ENV JETTY_BASE /jetty-base
 ENV JETTY_HOME /jetty-home-$JETTY_VERSION
 ENV JETTY_WEBAPPS_DIR $JETTY_BASE/webapps
-
-RUN apt update
-RUN apt upgrade -y
-RUN apt install software-properties-common -y
-RUN apt install wget -y
-RUN apt install curl -y
 
 # Install JDK 17 - https://www.rosehosting.com/blog/how-to-install-java-17-lts-on-ubuntu-20-04/
 RUN apt update -y
